@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Password Toggle</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <script>
+      const togglePass = () => {
+        const pass = document.getElementById("pass");
+        const check = document.getElementById("check");
+        pass.type = check.checked ? "text" : "password";
+      };
+    </script>
+
+    <div class="bod">
+      <div class="main">
+        <h1>Password Visibility Toggle</h1>
+
+        <div class="pass">
+          <div class="password">Password:</div>
+          <div class="button">
+            <input type="password" class="b" id="pass" />
+          </div>
+        </div>
+
+        <div class="show">
+          <input type="checkbox" id="check" onchange="togglePass()" />
+          <label for="check">Show password</label>
+        </div>
+        <!-- hii -->
+        <!-- <input type="text" name="" id=""> -->
+      </div>
+    </div>
+  </body>
+</html>
